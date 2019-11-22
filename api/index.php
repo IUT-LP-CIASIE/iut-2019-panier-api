@@ -198,7 +198,7 @@ $app->run();
 function getCart() {
 	$cart = 	file_get_contents($GLOBALS['file_cart']);
 	if($cart) {
-		$cart= json_decode($cart,true);
+		$cart= json_decode(array_values($cart),true);
 	} else {
 		$cart = [];
 	}
