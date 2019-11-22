@@ -131,7 +131,7 @@ $app->group('/cart', function() use($app, $products){
  *
  * @apiSuccess {Array} cart The cart content
  */
-	$app->delete('/{pid}', function() {
+	$app->delete('/{pid}', function(Slim\Http\Request $request, Slim\Http\Response $response) {
 		$pid = $request->getAttribute('pid');
 		$current = getCart();
 		$final = [];
