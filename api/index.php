@@ -50,6 +50,9 @@ if(file_exists($products_path)){
  */
 $app->get('/products', function() use($products){
 	$page = intval($_GET['page']);
+	if(!$page) {
+		$page=1;
+	}
 	$sort = ($_GET['sort']);
 	$field = $_GET['field'];
 
