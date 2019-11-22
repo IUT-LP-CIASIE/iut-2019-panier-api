@@ -1,0 +1,169 @@
+[{
+		"id": 1,
+		"nom": "Boîtier de pédalier TANGE",
+		"photo": "https://tools.sopress.net/iut/panier/images/tange-bottom-bracket-68-103.jpg",
+		"description": "Super léger, le top du boîtier",
+		"prix": 45.56
+	},
+	{
+		"id": 2,
+		"nom": "Pédalier SHIMANO",
+		"photo": "https://tools.sopress.net/iut/panier/images/shimanopedalierxtfcm785noir.jpg",
+		"description": "46 dents",
+		"prix": 75.45
+	},
+	{
+		"id": 3,
+		"nom": "Tige de selle BLB TRACK",
+		"photo": "https://tools.sopress.net/iut/panier/images/tige-de-selle-blb-track-os.jpg",
+		"description": "avec intégration de LED lumineuses",
+		"prix": 110.99
+	},
+	{
+		"id": 4,
+		"nom": "Guidon BLB",
+		"photo": "https://tools.sopress.net/iut/panier/images/tige-de-selle-blb-track-os.jpg",
+		"description": "Solide et léger",
+		"prix": 110.99
+	},
+	{
+		"id": 5,
+		"nom": "Chaine fixie KMC K710",
+		"photo": "https://tools.sopress.net/iut/panier/images/chaine-fixie-kmc-k710-kool-series-12-x-18-100-maillons.jpg",
+		"description": "Kool Series. Robuste.",
+		"prix": 99
+	},
+	{
+		"id": 6,
+		"nom": "Gaine de Frein Couleur",
+		"photo": "https://tools.sopress.net/iut/panier/images/cables-ks.jpg",
+		"description": "Rouge, vert, bleu, blanc",
+		"prix": 12
+	},
+	{
+		"id": 7,
+		"nom": "Etriers de Frein MICHE",
+		"photo": "https://tools.sopress.net/iut/panier/images/etriers-de-frein-velo-de-route-performance-miche---argent_full.jpg",
+		"description": "Compatible cadre BTX",
+		"prix": 250
+	},
+	{
+		"id": 8,
+		"nom": "Chambre à Air Autoréparante",
+		"photo": "https://tools.sopress.net/iut/panier/images/chambre-a-air-increvable-presta-700x23-25c-foss_full.jpg",
+		"description": "40mm",
+		"prix": 22
+	},
+	{
+		"id": 9,
+		"nom": "Bidon CINELLI Orange",
+		"photo": "https://tools.sopress.net/iut/panier/images/615VF81L+ML._SY355_.jpg",
+		"description": "L'artiste Barry Mc Gee a dessiné ce bidon Orange pour ses amis de chez CINELLI.",
+		"prix": 9
+	},
+	{
+		"id": 10,
+		"nom": "Porte-bidon Blackburn",
+		"photo": "https://tools.sopress.net/iut/panier/images/760469_ndowqaxlqmdrous7jrcp_xl_1.jpg",
+		"description": "Porte-bidon de la marque Blackburn, à l'aspect pur, efficace et pas cher.",
+		"prix": 6
+	},
+	{
+		"id": 11,
+		"nom": "Porte monnaie CHROME BISHOP",
+		"photo": "https://tools.sopress.net/iut/panier/images/porte-monnaie-chrome-zip-wallet.jpg",
+		"description": "Le porte monnaie BISHOP de chez CHROME est conçu à partir des mêmes matériaux de haute qualité que le reste de la gamme.",
+		"prix": 35
+	},
+	{
+		"id": 12,
+		"nom": "Porte Vélo CLUG Roadie",
+		"photo": "https://tools.sopress.net/iut/panier/images/porte-velo-clug-roadie.jpg",
+		"description": "CLUG, le plus petit porte vélo du monde ! ",
+		"prix": 19.75
+	},
+	{
+		"id": 13,
+		"nom": "Garde Boue BLB Classic Fender",
+		"photo": "https://tools.sopress.net/iut/panier/images/587caa32f2ec7.jpg",
+		"description": "Le Garde Boue CLASSIC FENDER de chez BLB vous assurera une protection totale par temps de pluie.",
+		"prix": 53.10
+	},
+	{
+		"id": 14,
+		"nom": "Porte Bagage Avant Chromé",
+		"photo": "https://tools.sopress.net/iut/panier/images/porte-bagages-avant-velo-orange-constructeur-rack.jpg",
+		"description": "Parfait pour customiser du vélo vintage comme moderne !",
+		"prix": 40
+	},
+	{
+		"id": 15,
+		"nom": "Porte Vélo CLUG Mountainbike",
+		"photo": "https://tools.sopress.net/iut/panier/images/porte-velo-clug-mountainbike.jpg",
+		"description": "CLUG, le plus petit porte vélo du monde ! ",
+		"prix": 19.75
+	},
+	{
+		"id": 16,
+		"nom": "Arrache Clou",
+		"photo": "https://tools.sopress.net/iut/panier/images/arrache-loup-.jpg",
+		"description": "L'arrache clou se positionne juste derrière l'étrier de frein comme indiqué sur les photos, il n'endommage pas le pneu et est silencieux.",
+		"prix": 6.5
+	},
+	{
+		"id": 17,
+		"nom": "Porte Ballon Kicker FAHRER",
+		"photo": "https://tools.sopress.net/iut/panier/images/porte-ballon-kicker-fahrer-1.jpg",
+		"description": "Pour les inconditionnels du ballon rond voici un petit accessoire bien pratique !!",
+		"prix": 18
+	},
+	{
+		"id": 18,
+		"nom": "Garde Boue PLUME Musguard",
+		"photo": "https://tools.sopress.net/iut/panier/images/garde-boue-plume-musguard.jpg",
+		"description": "Caractéristiques et vidéos de démo/installation plus bas.",
+		"prix": 35
+	},
+	{
+		"id": 19,
+		"nom": "Porte Clef FAHRER",
+		"photo": "https://tools.sopress.net/iut/panier/images/porte-clef-fahrer.jpg",
+		"description": "Porte clef FAHRER, jolie et fabriqué à la main à Berlin, ces porte-clefs sont conçus à partir de bache de camion, de bateau, de pub , ou de chambre à aire.",
+		"prix": 6
+	},
+	{
+		"id": 20,
+		"nom": "Protection de selle KAPPE de Fahrer",
+		"photo": "https://tools.sopress.net/iut/panier/images/dabc9143d3ae26764bd6e0e9030dfc4e.jpg",
+		"description": "Une protection de selle contre la pluie simple, efficace, pratique, discrète et fabriquée à la main à Berlin par l'équipe de Fahrer.",
+		"prix": 9.90
+	},
+	{
+		"id": 21,
+		"nom": "Fixation de porte bidon pour selle",
+		"photo": "https://tools.sopress.net/iut/panier/images/1649a_2.jpg",
+		"description": "Votre cadre ne comporte pas de connectique pour porte-bidon et/ou vous souhaitez gagner en aérodynamisme en positionnant votre bidon derrière la selle.",
+		"prix": 9.90
+	},
+	{
+		"id": 22,
+		"nom": "Sacoche de selle LIZARD SKIN CACHE",
+		"photo": "https://tools.sopress.net/iut/panier/images/Lizard-Skins-Sacoche-de-Selle-Cache-lead-0-79-litres-51280-160795-1481264980.jpg",
+		"description": "Sacoche de selle LIZARD SKIN CACHE, un très bon compromis poids / capacité, extrêmement bien finie par la célèbre marque.",
+		"prix": 21.90
+	},
+	{
+		"id": 23,
+		"nom": "Panier Vélo Avant BLB TAKE AWAY TRAY",
+		"photo": "https://tools.sopress.net/iut/panier/images/panier-velo-avant-blb-take-away-tray.jpg",
+		"description": "Le nouveau panier Take Away Tray de la marque BLB se distingue par son design et son style très épuré qui embellira les lignes de votre vélo. ",
+		"prix": 40.41
+	},
+	{
+		"id": 24,
+		"nom": "Rack arrière WALD 215",
+		"photo": "https://tools.sopress.net/iut/panier/images/rack-arriere-wald-215-.jpg",
+		"description": "Jolie port-bagages arrière Wald 215 un classique robuste et bien fini !",
+		"prix": 30
+	}
+]
