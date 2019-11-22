@@ -1,9 +1,5 @@
 <?php
 
-error_reporting(-1);
-ini_set('display_errors', 'On');
-
-
 session_start();
 require_once '../vendor/autoload.php';
 
@@ -110,17 +106,6 @@ $app->group('/cart', function() use($app, $products){
 		echo $cart;
 	});
 
-/**
- * @api {delete} /api/cart Empty cart
- * @apiName EmptyCart
- * @apiGroup Cart
- *
- * @apiSuccess {Array} cart The cart content (an empty array)
- */
-	$app->delete('', function() {
-		file_put_contents($GLOBALS['file_cart'],'');
-		echo '[]';
-	});
 
 /**
  * @api {delete} /api/cart/:product_id Remove product from cart
@@ -133,6 +118,7 @@ $app->group('/cart', function() use($app, $products){
  */
 	$app->delete('/{pid}', function(Slim\Http\Request $request, Slim\Http\Response $response) {
 		$pid = $request->getAttribute('pid');
+
 		$current = getCart();
 		$final = [];
 		foreach($current as $k=>$v) {
@@ -140,9 +126,21 @@ $app->group('/cart', function() use($app, $products){
 					$final[$k]=$v;
 				}
 		}
-		$json = json_encode($final);
+		$json = json_encode(array_values($final));
 		file_put_contents($GLOBALS['file_cart'],$json);
 		echo $json;
+	});
+
+/**
+ * @api {delete} /api/cart Empty cart
+ * @apiName EmptyCart
+ * @apiGroup Cart
+ *
+ * @apiSuccess {Array} cart The cart content (an empty array)
+ */
+	$app->delete('', function() {
+		file_put_contents($GLOBALS['file_cart'],'');
+		echo '[]';
 	});
 
 
