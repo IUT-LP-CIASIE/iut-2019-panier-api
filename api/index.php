@@ -162,20 +162,23 @@ $app->delete('', function() {
  */
 $app->post('/{pid}', function(Slim\Http\Request $request, Slim\Http\Response $response) use($products){
 	$pid = $request->getAttribute('pid');
-	if(!empty($pid) && isset($products[$pid])){
-		$current = getCart();
-		if( ! isset($current[$pid]) ){
-			$current[$pid]['id'] = $products[$pid]['id'];
-			$current[$pid]['nom'] = $products[$pid]['nom'];
-			$current[$pid]['qte'] = 0;
-			$current[$pid]['ok'] = false;
-			$current[$pid]['prix'] = 0;
-		}
+	if($product = getProduct($pid)){
+		$cart = getCart();
+		$key = rangDansCart($cart, $pid);
+		if(!isset($cart[$key]) ){
 
-		$current[$pid]['qte'] += 1;
-		$current[$pid]['prix'] = $current[$pid]['qte'] * $products[$pid]['prix'];
+			$cart[$key]=[];
+			$cart[$key]['id'] = $product['id'];
+			$cart[$key]['nom'] = $product['nom'];
+			$cart[$key]['qte'] = 0;
+			$cart[$key]['ok'] = false;
+			$cart[$key]['prix'] = 0;
+		} 
+		$cart[$key]['key'] = $key;
+		$cart[$key]['qte'] += 1;
+		$cart[$key]['prix'] = $cart[$key]['qte'] * $product['prix'];
 
-		$to_json = json_encode(array_values($current));
+		$to_json = json_encode(array_values($cart));
 		file_put_contents($GLOBALS['file_cart'],$to_json);
 		echo $to_json;
 	}
@@ -201,11 +204,28 @@ $app->put('/{pid}/buy', function(Slim\Http\Request $request, Slim\Http\Response 
 $app->run();
 
 function getCart() {
-	$cart = 	file_get_contents($GLOBALS['file_cart']);
+	$cart = file_get_contents($GLOBALS['file_cart']);
 	if($cart) {
 		$cart= array_values(json_decode($cart,true));
 	} else {
 		$cart = [];
 	}
 	return $cart;	
+}
+function getProduct($pid) {
+	global $products;
+	foreach($products as $product) {
+		if($product['id'] == $pid) {
+			return $product;
+		}
+	}
+}
+function rangDansCart($cart, $pid) {
+	foreach($cart as $k=>$v) {
+		if($v['id'] == $pid) {
+			return $k;
+		}
+	}
+
+	return intval(is_array($cart) ? count($cart) : 0);
 }
