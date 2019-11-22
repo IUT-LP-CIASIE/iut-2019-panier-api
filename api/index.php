@@ -15,7 +15,8 @@ $app = new \Slim\App();
 $app->add(function(ServerRequestInterface $request, ResponseInterface $response, callable $next){
 	$response = $response->withHeader('Content-type', 'application/json; charset=utf-8');
 //	$response = $response->withHeader('Access-Control-Allow-Origin', 'http://allweb.fun');
-	$response = $response->withHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE');
+  $response = $response->withHeader('Access-Control-Allow-Origin', '*');
+$response = $response->withHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE');
 	return $next($request, $response);
 });
 
