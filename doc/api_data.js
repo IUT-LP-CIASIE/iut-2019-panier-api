@@ -1,0 +1,206 @@
+define({ "api": [
+  {
+    "type": "post",
+    "url": "/api/cart/:product_id",
+    "title": "Add product to cart",
+    "name": "CartProduct",
+    "group": "Cart",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "product_id",
+            "description": "<p>The id of the product to add to the cart</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Array",
+            "optional": false,
+            "field": "cart",
+            "description": "<p>The cart content</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "api/index.php",
+    "groupTitle": "Cart"
+  },
+  {
+    "type": "put",
+    "url": "/api/cart/:product_id/buy",
+    "title": "Order a specific product in the cart",
+    "name": "CartProductOrder",
+    "group": "Cart",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "product_id",
+            "description": "<p>The id of the product to order</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "ressource",
+            "description": "<p>A structured ressource containing the state of the product's order</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "api/index.php",
+    "groupTitle": "Cart"
+  },
+  {
+    "type": "delete",
+    "url": "/api/cart",
+    "title": "Empty cart",
+    "name": "EmptyCart",
+    "group": "Cart",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Array",
+            "optional": false,
+            "field": "cart",
+            "description": "<p>The cart content (an empty array)</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "api/index.php",
+    "groupTitle": "Cart"
+  },
+  {
+    "type": "delete",
+    "url": "/api/cart/:product_id",
+    "title": "Remove product from cart",
+    "name": "EmptyCartProduct",
+    "group": "Cart",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "product_id",
+            "description": "<p>The id of the product to remove from the cart</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Array",
+            "optional": false,
+            "field": "cart",
+            "description": "<p>The cart content</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "api/index.php",
+    "groupTitle": "Cart"
+  },
+  {
+    "type": "get",
+    "url": "/api/cart",
+    "title": "Get cart content",
+    "name": "GetCart",
+    "group": "Cart",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Array",
+            "optional": false,
+            "field": "cart",
+            "description": "<p>The cart content</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "api/index.php",
+    "groupTitle": "Cart"
+  },
+  {
+    "type": "get",
+    "url": "/api/products/?page=:page&sort=:sort&field=:field",
+    "title": "Get products",
+    "name": "getProducts",
+    "group": "Products",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>Paginate the product list. Default is 1</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "sort",
+            "description": "<p>Sort order (<code>asc</code> or <code>desc</code>). Default is <code>asc</code></p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "field",
+            "description": "<p>Field to sort on (<code>name</code> or <code>price</code>). Default is <code>price</code></p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Array",
+            "optional": false,
+            "field": "products",
+            "description": "<p>The paginated and sorted product list</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "api/index.php",
+    "groupTitle": "Products"
+  }
+] });
