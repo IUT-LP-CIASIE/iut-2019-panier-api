@@ -32,7 +32,7 @@ define({ "api": [
       }
     },
     "version": "0.0.0",
-    "filename": "api/index.php",
+    "filename": "./index.php",
     "groupTitle": "Cart"
   },
   {
@@ -68,7 +68,7 @@ define({ "api": [
       }
     },
     "version": "0.0.0",
-    "filename": "api/index.php",
+    "filename": "./index.php",
     "groupTitle": "Cart"
   },
   {
@@ -91,7 +91,7 @@ define({ "api": [
       }
     },
     "version": "0.0.0",
-    "filename": "api/index.php",
+    "filename": "./index.php",
     "groupTitle": "Cart"
   },
   {
@@ -127,7 +127,7 @@ define({ "api": [
       }
     },
     "version": "0.0.0",
-    "filename": "api/index.php",
+    "filename": "./index.php",
     "groupTitle": "Cart"
   },
   {
@@ -150,12 +150,12 @@ define({ "api": [
       }
     },
     "version": "0.0.0",
-    "filename": "api/index.php",
+    "filename": "./index.php",
     "groupTitle": "Cart"
   },
   {
     "type": "get",
-    "url": "/api/products/?page=:page&sort=:sort&field=:field",
+    "url": "/api/products?page=:page&sort=:sort&field=:field",
     "title": "Get products",
     "name": "getProducts",
     "group": "Products",
@@ -200,7 +200,7 @@ define({ "api": [
       }
     },
     "version": "0.0.0",
-    "filename": "api/index.php",
+    "filename": "./index.php",
     "groupTitle": "Products"
   }
 ] });

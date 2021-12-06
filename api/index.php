@@ -38,7 +38,7 @@ if(file_exists($products_path)){
 }
 
 /**
- * @api {get} /api/products/?page=:page&sort=:sort&field=:field Get products
+ * @api {get} /api/products?page=:page&sort=:sort&field=:field Get products
  * @apiName getProducts
  * @apiGroup Products
  *
@@ -199,7 +199,7 @@ $app->post('/{pid}', function(Slim\Http\Request $request, Slim\Http\Response $re
  */
 $app->put('/{pid}/buy', function(Slim\Http\Request $request, Slim\Http\Response $response){
 	$pid = $request->getAttribute('pid');
-		sleep(rand(0,5)); // faire durer, de manière aléatoire, le temps de traitement de cette méthode
+		sleep(rand(0,5)); // faire durer, de maniï¿½re alï¿½atoire, le temps de traitement de cette mï¿½thode
 		echo json_encode(array('success' => true, 'product' => $pid));
 	});
 });
