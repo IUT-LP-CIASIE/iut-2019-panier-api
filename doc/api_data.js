@@ -181,7 +181,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "field",
-            "description": "<p>Field to sort on (<code>name</code> or <code>price</code>). Default is <code>price</code></p>"
+            "description": "<p>Field to sort on (<code>name</code> or <code>price</code>). Default is <code>name</code></p>"
           }
         ]
       }

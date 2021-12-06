@@ -44,7 +44,7 @@ if(file_exists($products_path)){
  *
  * @apiParam {Number} page Paginate the product list. Default is 1
  * @apiParam {String} sort Sort order (`asc` or `desc`). Default is `asc`
- * @apiParam {String} field Field to sort on (`name` or `price`). Default is `price`
+ * @apiParam {String} field Field to sort on (`name` or `price`). Default is `name`
  *
  * @apiSuccess {Array} products The paginated and sorted product list
  */
